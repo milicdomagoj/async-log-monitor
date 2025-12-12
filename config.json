@@ -1,0 +1,13 @@
+{
+    "files_to_watch": [
+        "syslog.log",
+        "auth.log"
+    ],
+    "keywords": [
+        "ERROR",
+        "WARNING",
+        "CRITICAL"
+    ],
+    "poll_interval": 0.2,
+    "output_file": "detected_errors.log"
+}

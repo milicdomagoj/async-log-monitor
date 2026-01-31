@@ -52,7 +52,7 @@ async-log-monitor/
 
 ---
 
-## ⚙️ Configuration (`config.json`)
+## Configuration (`config.json`)
 
 All runtime configuration is handled externally via `config.json`:
 
@@ -77,8 +77,9 @@ keywords – log levels that trigger detection
 poll_interval – how often files are checked (seconds)
 output_file – file where detected issues are stored
 
+---
 
-Running the Application
+## Running the Application
 Activate your virtual environment (if used):
 source venv/bin/activate
 
@@ -86,24 +87,30 @@ source venv/bin/activate
 Run the log monitor:
 python3 reader_async_multi.py
 
-Testing the Monitor
+---
+
+## Testing the Monitor
 In a separate terminal, append log entries:
 echo "ERROR Disk failure detected" >> syslog.log
 echo "WARNING Low disk space" >> auth.log
+
+---
 
 Detected events will:
 Appear instantly in the terminal (with colors)
 Be written to detected_errors.log
 
+---
 
-Graceful Shutdown
+## Graceful Shutdown
 
 Stop the application safely using:
 CTRL + C
 The application shuts down cleanly without stack traces or errors.
 
+---
 
-Learning Goals & Motivation
+## Learning Goals & Motivation
 
 This project was created to:
 Practice asynchronous programming in Python
@@ -112,8 +119,9 @@ Work with Linux-style log monitoring
 Build a production-oriented CLI tool
 Prepare for junior / student Python developer roles
 
+---
 
-Possible Improvements
+## Possible Improvements
 
 Log rotation support
 Directory-based log discovery
@@ -121,8 +129,9 @@ Alerting (Slack / Email / Webhooks)
 Interactive TUI (terminal UI)
 Running as a Linux system service
 
+---
 
-Author
+## Author
 
 Domagoj Milić
 GitHub: https://github.com/milicdomagoj

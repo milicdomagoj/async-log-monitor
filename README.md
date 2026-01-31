@@ -34,12 +34,19 @@ The tool tracks multiple log files concurrently, detects critical events, and re
 ## Project Structure
 
 async-log-monitor/
+
 ├── reader_async_multi.py # Main async log monitoring application
+
 ├── reader_async_one.py # Async single-file example
+
 ├── reader_basic.py # Synchronous prototype (learning step)
+
 ├── config.json # Application configuration
+
 ├── detected_errors.log # Output file for detected issues
+
 ├── .gitignore
+
 └── README.md
 
 

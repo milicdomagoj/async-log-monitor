@@ -80,17 +80,17 @@ output_file – file where detected issues are stored
 ---
 
 ## Running the Application
-Activate your virtual environment (if used):
-source venv/bin/activate
+- Activate your virtual environment (if used):
+  source venv/bin/activate
 
 
-Run the log monitor:
+-Run the log monitor:
 python3 reader_async_multi.py
 
 ---
 
 ## Testing the Monitor
-In a separate terminal, append log entries:
+-In a separate terminal, append log entries:
 echo "ERROR Disk failure detected" >> syslog.log
 echo "WARNING Low disk space" >> auth.log
 
@@ -112,27 +112,27 @@ The application shuts down cleanly without stack traces or errors.
 
 ## Learning Goals & Motivation
 
-This project was created to:
-Practice asynchronous programming in Python
-Understand event loops and non-blocking I/O
-Work with Linux-style log monitoring
-Build a production-oriented CLI tool
-Prepare for junior / student Python developer roles
+- This project was created to:
+- Practice asynchronous programming in Python
+- Understand event loops and non-blocking I/O
+- Work with Linux-style log monitoring
+- Build a production-oriented CLI tool
+- Prepare for junior / student Python developer roles
 
 ---
 
 ## Possible Improvements
 
-Log rotation support
-Directory-based log discovery
-Alerting (Slack / Email / Webhooks)
-Interactive TUI (terminal UI)
-Running as a Linux system service
+- Log rotation support
+- Directory-based log discovery
+- Alerting (Slack / Email / Webhooks)
+- Interactive TUI (terminal UI)
+- Running as a Linux system service
 
 ---
 
 ## Author
 
-Domagoj Milić
-GitHub: https://github.com/milicdomagoj
+- Domagoj Milić
+- GitHub: https://github.com/milicdomagoj
 
